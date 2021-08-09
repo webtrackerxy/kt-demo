@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <ImageView
+      android:id="@+id/character_image"
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:contentDescription="@string/thumbnail"
+      tools:src="@mipmap/ic_launcher" />
+
+
+  <TextView
+      android:id="@+id/character_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/character_image"
+      android:paddingEnd="4dp"
+      android:textColor="#000000"
+      android:textSize="20sp"
+      tools:text="Name" />
+
+  <TextView
+      android:id="@+id/character_occupation"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/character_name"
+      android:textSize="20sp"
+      tools:text="Occupation" />
+
+  <TextView
+      android:id="@+id/character_status"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/character_occupation"
+      android:textSize="20sp"
+      tools:text="Status" />
+
+    <TextView
+        android:id="@+id/character_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/character_status"
+        android:textSize="20sp"
+        tools:text="NickName" />
+
+    <TextView
+        android:id="@+id/character_season_appearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/character_nickname"
+        android:textSize="20sp"
+        tools:text="Season Apperance" />
+
+
+</RelativeLayout>
